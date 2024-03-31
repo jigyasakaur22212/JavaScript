@@ -29,7 +29,7 @@ console.log(newSting3);
 console.log(newSting3.trim());//use to remove the unncessary white spaces and work only on white spaces removal not other
 
 const newString4 = " jigyasa.c m aaala"
-console.log(newSt ring4.replace('a','-'));
+console.log(newSt newString4.replace('a','-'));
 console.log(newString4.includes('aaa'));
 
 gameName = "Jihuasa-hi-you-i-am"

@@ -102,6 +102,34 @@ console.log(typeof Object.keys(tinder));
 console.log(Object.values(tinder));
 console.log(Object.entries(tinder));
 console.log(tinder.hasOwnProperty(isLogged));//this is to check if the property is present in the object or not
+
+
+//************************part3*********************
+//destructuring can be done in arrays as well as arrays 
+
+const course = {
+    coursename :"js in hindi",
+    price: "999",
+    courseInstructor:"jigyasa"
+}
+//course.courseInstructor
+const{courseInstructor} = course
+
+console.log(course);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 constructor
 : 

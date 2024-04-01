@@ -69,3 +69,28 @@ if (isUserLoggedIn && debitCard) {
 if (LoggedInFromGoolge || LoggedInFromemail) {
     console.log("User Logged in");
 }
+ // logic operators - && and||
+
+ // Nullish Coalescing Operator (??) : null Undefined
+// fall back on deciding the errors 
+
+let val1;
+val1 = 5 ?? 10
+console.log(val1);
+val1 = null ?? 10
+// it checks the safety of the value 
+console.log(val1);
+val1 = undefined ?? 15
+console.log(val1);
+val1 = null ?? 10 ?? 15
+console.log(val1);
+
+
+//terniary operator
+
+// condition ? true : false
+
+const icePrice = 100
+
+icePrice <= 80 ? console.log("Less than 80") : console.log("More than 80")
+

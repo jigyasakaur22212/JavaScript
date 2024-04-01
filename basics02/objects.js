@@ -101,7 +101,7 @@ console.log(Object.keys(tinder));
 console.log(typeof Object.keys(tinder));
 console.log(Object.values(tinder));
 console.log(Object.entries(tinder));
-console.log(tinder.hasOwnProperty(isLogged));//this is to check if the property is present in the object or not
+// console.log(tinder.hasOwnProperty(isLogged));//this is to check if the property is present in the object or not
 
 
 //************************part3*********************
@@ -112,11 +112,39 @@ const course = {
     price: "999",
     courseInstructor:"jigyasa"
 }
-//course.courseInstructor
-const{courseInstructor} = course
+//course.courseInstructor /can also use square instruction 
 
-console.log(course);
+// instead of writing course.courseInstructor every time we can use a pronoun 
 
+const{courseInstructor} = course //this extract the course in courseInstructor and we can use it without dot notation this is called destructuring 
+const {courseInstructor: CI} = course  // courseInstructor can be renamed as well
+
+console.log(courseInstructor);
+console.log(CI);
+
+// React concept
+// const navbar = (props.company) => {
+//  // instead of props.company we can also destructure in react by {company}
+// }
+// navbar(company = :"Jigyasa")
+
+
+//API's - when we put headache on others head
+//earlier it use to return in XML file which were complex but now we use JSON - it is object only
+// {
+//     "name" : "Jigyasa",
+//     "coursename" : "json object making",
+//     "price": "free ",
+//     // this is an object but sice an object have a name and this block doesnot have a name therefore, the are treated as a json block to make it proper keys will also be in " " and values will also be in  " "
+// }
+//JSON - javascript object notation whenever we send the data we should send the file in json format 
+
+ //Json can also have arrays
+ [
+    {},
+    {},
+    {}
+ ]
 
 
 

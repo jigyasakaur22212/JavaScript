@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+        <div class="day">Friday</div>
+        <div class="day">Saturday</div>
+        <div class="day">Sunday</div>
+    </div>
+</body>
+<script>
+    // open the console in the browser to see the results
+    const parent = document.querySelector(".parent")
+    // console.log(parent); // returns class
+    // console.log(parent.children); //returns the collection
+    // console.log(parent.children[1]); //return tuesday div
+    // console.log(parent.children[1].innerHTML);  // tuesday
+
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML);
+    // }
+
+    parent.children[1].style.color = "orange"
+    // console.log(parent.firstElementChild);
+    // // console.log(parent.secondElementChild);
+    // console.log(parent.lastElementChild);
+
+    const dayOne = document.querySelector('.day')
+    // console.log(dayOne); // want to go to parent directly
+    // console.log(dayOne.parentElement);
+    // console.log(dayOne.nextElementSibling)
+    
+
+    console.log("Nodes: " , parent.childNodes);
+
+//NodeList(15) [text, div.day, text, div.day, text, div.day, text, div.day, text, div.day, text, div.day, text, div.day, text]
+
+
+
+</script>
+</html>

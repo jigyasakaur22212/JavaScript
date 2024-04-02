@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DOM learning</title>
+    <style>
+        body{
+            background: black;
+            color: aliceblue;
+        }
+        .bg-black{
+            color: aqua;
+        }
+    </style>
 </head>
 <body>
     <div class="bg-back">
-        <h1 class="heading">
+        <h1 id = "title" class="heading" style="background-color: greenyellow;">
             DOM learning on chai and 
             <!-- Document object manipulation-->
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptas nisi. Veniam, repudiandae? Ratione commodi ut eaque facere suscipit vero dicta aut exercitationem fugiat sunt! Mollitia obcaecati culpa perferendis fuga?</p>
@@ -17,3 +26,49 @@
 </html>
 
 <!-- go to consol and console.log(document) and console.dir(document) -->
+<!-- 
+    document.getElementById('title')
+<h1 id=​"title" class=​"heading">​" DOM learning on chai and "<!-- Document object manipulation--><p>​…​</p>​</h1>​
+<!-- document.getElementById('title').id
+'title'
+document.getElementById('title').class
+undefined
+document.getElementById('title').className
+'heading --> -->
+<!-- document.getElementById('title').getAttribute('id')
+'title'
+document.getElementById('title').getAttribute('class')
+'heading -->
+<!-- document.getElementById('title').setAttribute('class','test heading')
+undefined
+document.getElementById('title').getAttribute('class')
+'test heading'
+document.getElementById('title').setAttribute('id','test')
+undefined
+document.getElementById('title').getAttribute('id') -->
+<!-- const title = document.getElementById("title")
+undefined
+title
+<h1 id=​"title" class=​"heading" style=​"background-color:​ greenyellow;​">​…​</h1>​
+title.style.backgroundColor = 'green'
+'green'
+title.style.padding = "15px"
+'15px'
+title.style.borderRadius = "15px"
+'15px' -->
+
+<!-- title.innerText - will give out only the visible text
+    'DOM learning on chai and\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptas nisi. Veniam, repudiandae? Ratione commodi ut eaque facere suscipit vero dicta aut exercitationem fugiat sunt! Mollitia obcaecati culpa perferendis fuga?'
+title.textContent - this will give all the context and hidden aswell 
+like span with display - none
+    '\n            DOM learning on chai and \n            \n            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptas nisi. Veniam, repudiandae? Ratione commodi ut eaque facere suscipit vero dicta aut exercitationem fugiat sunt! Mollitia obcaecati culpa perferendis fuga?\n 
+title.innerHTML - gives inner html as well
+    '\n            DOM learning on chai and \n            \x3C!-- Document object manipulation\n            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptas nisi. Veniam, repudiandae? Ratione commodi ut eaque facere suscipit vero dicta aut exercitationem fugiat sunt! Mollitia obcaecati culpa perferendis fuga?</p>\n     
+-->
+
+<!-- document.getElementsByClassName("heading")
+HTMLCollection [h1#title.heading, title: h1#title.heading] -->
+
+<!-- QUERY SELECTOR  - gives the first occuances i.e. only one value
+QUERYSELECTORALL - NODE LIST VALUE IS RETURNED I -->
+
